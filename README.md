@@ -3,6 +3,8 @@ gettingAndCleanningDataProject
 This repo contains the code to clean the data from the following data repository (data from accelerometers from the Samsung Galaxy S smartphone)
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+The files shall be unzipped on the folder "./UCI HAR Dataset/"
+
 The R script "run_analysis.R" executes the following steps:
 1) Merges the training and the test sets to create one data set.
 2) Extracts only the measurements on the mean and standard deviation for each measurement. 
