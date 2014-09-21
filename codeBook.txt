@@ -1,0 +1,99 @@
+Code Book for the Getting and Cleaning Data Course Project
+
+Reference:
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+General information:
+
+The rawdata was acquired from the accelerometer and gyroscope 3-axial raw signals of a Samsung SII cellphone.
+These time domain signals were captured at a constant rate of 50 Hz. 
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
+Similarly, the acceleration signal was then separated into body and gravity acceleration signals using another
+low pass Butterworth filter with a corner frequency of 0.3 Hz.
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm 
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequency domain signals. 
+
+Data Dictionnary
+
+'ActivityLabels' - six performed activities during the experiment (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+'Subject' - identification of the volunteer (1 to 30)
+'timeBodyAcceleration-mean()-X' - average mean body acceleration on the time domain - X axis for each Activity and Subject. Unit: [g]
+'timeBodyAcceleration-mean()-Y' - average mean body acceleration on the time domain - Y axis for each Activity and Subject. Unit: [g]
+'timeBodyAcceleration-mean()-Z' - average mean body acceleration on the time domain - Y axis for each Activity and Subject. Unit: [g]
+'timeBodyAcceleration-std()-X' - average standard deviation body acceleration on the time domain - X axis for each Activity and Subject. Unit: [g]
+'timeBodyAcceleration-std()-Y' - average standard deviation body acceleration on the time domain - Y axis for each Activity and Subject. Unit: [g]
+'timeBodyAcceleration-std()-Z' - average standard deviation body acceleration on the time domain - Z axis for each Activity and Subject. Unit: [g]
+'timeGravityAcceleration-mean()-X' - average mean body acceleration on the time domain - X axis for each Activity and Subject. Unit: [g]
+'timeGravityAcceleration-mean()-Y' - average mean body acceleration on the time domain - Y axis for each Activity and Subject. Unit: [g]
+'timeGravityAcceleration-mean()-Z' - average mean body acceleration on the time domain - Z axis for each Activity and Subject. Unit: [g]
+'timeGravityAcceleration-std()-X' - average standard deviation body acceleration on the time domain - X axis for each Activity and Subject. Unit: [g]
+'timeGravityAcceleration-std()-Y' - average standard deviation body acceleration on the time domain - Y axis for each Activity and Subject. Unit: [g]
+'timeGravityAcceleration-std()-Z' - average standard deviation body acceleration on the time domain - Z axis for each Activity and Subject. Unit: [g]
+'timeBodyAccelerationJerk-mean()-X' - average mean Jerk acceleration on the time domain - X axis for each Activity and Subject. Unit: [g]
+'timeBodyAccelerationJerk-mean()-Y' - average mean Jerk acceleration on the time domain - Y axis for each Activity and Subject. Unit: [g]
+'timeBodyAccelerationJerk-mean()-Z' - average mean Jerk acceleration on the time domain - Z axis for each Activity and Subject. Unit: [g]
+'timeBodyAccelerationJerk-std()-X' - average standard deviation Jerk acceleration on the time domain - X axis for each Activity and Subject. Unit: [g]
+'timeBodyAccelerationJerk-std()-Y' - average standard deviation Jerk acceleration on the time domain - Y axis for each Activity and Subject. Unit: [g]
+'timeBodyAccelerationJerk-std()-Z' - average standard deviation Jerk acceleration on the time domain - Z axis for each Activity and Subject. Unit: [g]
+'timeBodyGyro-mean()-X' - average mean body angular velocity on the time domain - X axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyro-mean()-Y' - average mean body angular velocity on the time domain - Y axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyro-mean()-Z' - average mean body angular velocity on the time domain - Z axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyro-std()-X' - average standard deviation body angular velocity on the time domain - X axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyro-std()-Y' - average standard deviation body angular velocity on the time domain - Y axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyro-std()-Z' - average standard deviation body angular velocity on the time domain - Z axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyroJerk-mean()-X' - average mean Jerk body angular velocity on the time domain - X axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyroJerk-mean()-Y' - average mean Jerk body angular velocity on the time domain - Y axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyroJerk-mean()-Z' - average mean Jerk body angular velocity on the time domain - Z axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyroJerk-std()-X' - average standard deviation Jerk body angular velocity on the time domain - X axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyroJerk-std()-Y' - average standard deviation Jerk body angular velocity on the time domain - Y axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyroJerk-std()-Z' - average standard deviation Jerk body angular velocity on the time domain - Z axis for each Activity and Subject. Unit: [rad/sec]
+'timeBodyAccelerationMagnitude-mean()' - average mean body acceleration magnitude for each Activity and Subject. Unit: [g]
+'timeBodyAccelerationMagnitude-std()' - average standard deviation body acceleration magnitude for each Activity and Subject. Unit: [g]
+'timeGravityAccelerationMagnitude-mean()' - average mean gravity acceleration magnitude for each Activity and Subject. Unit: [g]
+'timeGravityAccelerationMagnitude-std()' - average standard deviation gravity acceleration magnitude for each Activity and Subject. Unit: [g]
+'timeBodyAccelerationJerkMagnitude-mean()' - average mean Jerk body acceleration magnitude for each Activity and Subject. Unit: [g]
+'timeBodyAccelerationJerkMagnitude-std()' - average standard deviation Jerk body acceleration magnitude for each Activity and Subject. Unit: [g]
+'timeBodyGyroMagnitude-mean()' - average mean body angular velocity magnitude on the time domain for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyroMagnitude-std()' - average standard deviation body angular velocity magnitude on the time domain for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyroJerkMagnitude-mean()' - average mean Jerk body angular velocity magnitude on the time domain for each Activity and Subject. Unit: [rad/sec]
+'timeBodyGyroJerkMagnitude-std()' - average standard deviation Jerk body angular velocity magnitude on the time domain for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyAcceleration-mean()-X' - average mean body acceleration on the frequency domain - X axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAcceleration-mean()-Y' - average mean body acceleration on the frequency domain - Y axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAcceleration-mean()-Z' - average mean body acceleration on the frequency domain - Z axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAcceleration-std()-X' - average standard deviation body acceleration on the frequency domain - X axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAcceleration-std()-Y' - average standard deviation body acceleration on the frequency domain - Y axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAcceleration-std()-Z' - average standard deviation body acceleration on the frequency domain - Z axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAcceleration-meanFreq()-X' - average weight average of the body acceleration on the frequency domain - X axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAcceleration-meanFreq()-Y' - average weight average of the body acceleration on the frequency domain - Y axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAcceleration-meanFreq()-Z' - average weight average of the body acceleration on the frequency domain - Z axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerk-mean()-X' - average mean Jerk body acceleration on the frequency domain - X axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerk-mean()-Y' - average mean Jerk body acceleration on the frequency domain - Y axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerk-mean()-Z' - average mean Jerk body acceleration on the frequency domain - Z axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerk-std()-X' - average standard deviation of the Jerk body acceleration on the frequency domain - X axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerk-std()-Y' - average standard deviation average of the Jerk body acceleration on the frequency domain - Y axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerk-std()-Z' - average standard deviation average of the Jerk body acceleration on the frequency domain - Z axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerk-meanFreq()-X' - average weight average of the Jerk body acceleration on the frequency domain - X axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerk-meanFreq()-Y' - average weight average of the Jerk body acceleration on the frequency domain - Y axis for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerk-meanFreq()-Z' - average weight average of the Jerk body acceleration on the frequency domain - Z axis for each Activity and Subject. Unit: [g]
+'frequencyBodyGyro-mean()-X' - average mean body angular velocity on the time domain - X axis for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyro-mean()-Y' - average mean body angular velocity on the time domain - Y axis for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyro-mean()-Z' - average mean body angular velocity on the time domain - Z axis for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyro-std()-X' - average standard deviation body angular velocity on the time domain - X axis for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyro-std()-Y' - average standard deviation body angular velocity on the time domain - Y axis for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyro-std()-Z' - average standard deviation body angular velocity on the time domain - Z axis for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyro-meanFreq()-X' - average weight average of the angular velocity on the frequency domain - X axis for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyro-meanFreq()-Y' - average weight average of the angular velocity on the frequency domain - Y axis for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyro-meanFreq()-Z' - average weight average of the angular velocity on the frequency domain - Z axis for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyAccelerationMagnitude-mean()' - average mean body acceleration magnitude on the frequency domain for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationMagnitude-std()' - average standard deviation body acceleration magnitude on the frequency domain for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationMagnitude-meanFreq()' - average weight average of the body acceleration magnitude on the frequency domain for each Activity and Subject. Unit: [g]
+'frequencyBodyAccelerationJerkMagnitude-mean()' - average mean Jerk body acceleration magnitude on the frequency domain for each Activity and Subject. Unit: [g] 
+'frequencyBodyAccelerationJerkMagnitude-std()' - average standard deviation Jerk body acceleration magnitude on the frequency domain for each Activity and Subject. Unit: [g] 
+'frequencyBodyAccelerationJerkMagnitude-meanFreq()' - average of the weight average of the Jerk body acceleration magnitude on the frequency domain for each Activity and Subject. Unit: [g]
+'frequencyBodyGyroMagnitude-mean()' - average mean body angular velocity magnitude on the frequency domain for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyroMagnitude-std()' - average standard deviation body angular velocity magnitude on the frequency domain for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyroMagnitude-meanFreq()' - average weight average of the body angular velocity magnitude on the frequency domain for each Activity and Subject. Unit: [rad/sec]
+'frequencyBodyGyroJerkMagnitude-mean()' - average mean Jerk body angular velocity magnitude on the frequency domain for each Activity and Subject. Unit: [rad/sec] 
+'frequencyBodyGyroJerkMagnitude-std()' - average standard deviation Jerk body angular velocity magnitude on the frequency domain for each Activity and Subject. Unit: [rad/sec] 
+'frequencyBodyGyroJerkMagnitude-meanFreq()' - average of the weight average of the Jerk body angular velocity magnitude on the frequency domain for each Activity and Subject. Unit: [rad/sec]
